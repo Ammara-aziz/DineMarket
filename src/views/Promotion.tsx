@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Event1 from "@/components/Assets/image/event1.webp";
+import Event1 from "@/components/Assets/image/Event1.webp";
 import E2 from "@/components/Assets/image/E2.webp";
 import Vent3 from "@/components/Assets/image/Vent3.webp";
 
