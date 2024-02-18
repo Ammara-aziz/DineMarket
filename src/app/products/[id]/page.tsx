@@ -20,8 +20,8 @@ export default function Page({ params }: { params: { id: string } }) {
   return (
     <div className="flex flex-wrap justify-evenly mt-16 py-10  bg-gray-50">
       {result.map((product) => (
-        <div className='flex flex-col'>
-          <div key={product.id} className='flex justify-between gap-6'>
+        <div key={product.id} className='flex flex-col'>
+          <div  className='flex justify-between gap-6'>
             {/* Left Image */}
             <div>
               <Image src={product.image} alt={product.name} />
@@ -37,9 +37,9 @@ export default function Page({ params }: { params: { id: string } }) {
                 {/* Sizes */}
                 <div className='flex flex-row gap-9 mt-5'>
                   {
-                    sizes.map((pro) => {
+                    sizes.map((pro,index) => {
                       return (
-                        <div className='flex justify-center bg-white text-gray-500  gap-14 h-7 w-7 rounded-full hover:shadow-xl duration-300 '>
+                        <div key={index} className='flex justify-center bg-white text-gray-500  gap-14 h-7 w-7 rounded-full hover:shadow-xl duration-300 '>
                           <span className='flex text-center hover:bg-gray-100 font-bold'>{pro}</span>
                         </div>
                       )
